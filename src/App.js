@@ -42,11 +42,12 @@ export default class App extends Component {
             </div>
           </div> 
           <div className='Output'>
+            <div className='outputText'>
               <h3>Frase </h3>
               <p>{fraseCodificada}</p>
               <p>{fraseDecodificada}</p>
-          
-            <ButtonCopy
+            </div>
+            <ButtonCopy className='buttonCopy'
               fraseCodificada={fraseCodificada}
             />
           </div>

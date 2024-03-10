@@ -28,7 +28,7 @@ body {
   background-size: 200% 200%;
   text-align: center;
   box-sizing: border-box;
-  height: 120vh;
+  height: 100vh;
   margin: 20px 20px;
 }
 
@@ -45,9 +45,10 @@ body {
 }
 
 header{
-  font-size: 1.5rem;
+  font-size: 2.25rem;
+  font-family: var(--fonte-primaria);
   text-align: center;
-  border: #22D4FD 5px solid;
+  /* border: #22D4FD 5px solid; */
   margin: 10px 10px ;
   padding: 30px 20px; 
 }
@@ -55,18 +56,19 @@ header{
 .App {
   padding: 5% 15%;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  height: 50%;
+  height: 30%;
   margin: 20px 20px;
-  border: red 5px solid;
+  /* border: red 5px solid; */
+  
 }
 
 .Input {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: rgb(116, 226, 43) 5px solid; 
+  justify-content: space-around;
+  /* border: rgb(116, 226, 43) 5px solid;  */
 }
 
 .botaoCod {
@@ -81,8 +83,16 @@ header{
 .Output {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: rgb(101, 43, 226) 5px solid;
+  justify-content: space-around;
+
+  width: 50vh;
+  margin: 10px 10px;
+  /* border: rgb(101, 43, 226) 5px solid; */
+}
+
+.outputText {
+  /* border: red 5px solid; */
+  padding: 10px 100px;
 }
 
 .reset {

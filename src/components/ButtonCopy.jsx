@@ -9,7 +9,7 @@ function ButtonCopy({ fraseCodificada }) {
   };
 
   return (
-    <button onClick={copiarResultado}>Copiar Resultado</button>
+    <button onClick={copiarResultado}>Copiar</button>
   );
 }
 
