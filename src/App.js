@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ButtonCod from './components/ButtonCod';
 import ButtonDecod from './components/ButtonDecod';
 import ButtonCopy from './components/ButtonCopy';
+import './App.css'; 
 
 export default class App extends Component {
   state = {
@@ -17,8 +18,9 @@ export default class App extends Component {
   render() {
     const { fraseOriginal, fraseCodificada, fraseDecodificada } = this.state;
     return (
+    <body>
+      <header >Codificar e Decodificar Frases</header>  
       <div className="App">
-        <h1>Codificar e Decodificar Frases</h1>
         <textarea
           value={fraseOriginal}
           onChange={(e) => this.setState({ fraseOriginal: e.target.value })}
@@ -35,7 +37,7 @@ export default class App extends Component {
           setFraseDecodificada={(novaFraseDecodificada) => this.setState({ fraseDecodificada: novaFraseDecodificada })}
         />
         <div>
-          <h3>Frase :</h3>
+          <h3>Frase </h3>
           <p>{fraseCodificada}</p>
           <p>{fraseDecodificada}</p>
         </div>
@@ -44,6 +46,7 @@ export default class App extends Component {
         />
         <button onClick={this.handleRefresh}>Reiniciar</button>
       </div>
+    </body>
     );
   }
 }
