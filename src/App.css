@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
 :root {
   --color1: #000000;
   --color2: #252734;
   --color3: #595b74;
   --color4: #9697bd;
   --color5: #dbdaff;
+
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,6 +27,9 @@ body {
   background: linear-gradient(45deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5));
   background-size: 200% 200%;
   text-align: center;
+  box-sizing: border-box;
+  height: 120vh;
+  margin: 20px 20px;
 }
 
 @keyframes Animation {
@@ -25,14 +44,12 @@ body {
   }
 }
 
-*{
-  margin: 0;
-  padding: 0;
-}
-
 header{
-  padding: 2% 0% 0% 15%;
   font-size: 1.5rem;
+  text-align: center;
+  border: #22D4FD 5px solid;
+  margin: 10px 10px ;
+  padding: 30px 20px; 
 }
 
 .App {
@@ -40,4 +57,40 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50%;
+  margin: 20px 20px;
+  border: red 5px solid;
 }
+
+.Input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: rgb(116, 226, 43) 5px solid; 
+}
+
+.botaoCod {
+  display: flex;
+  justify-content: space-between; /* Adiciona espaçamento igual entre os botões */
+}
+
+.botaoCod button {
+  margin-right: 20px; /* Adiciona margem à direita de cada botão, ajuste conforme necessário */
+}
+
+.Output {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: rgb(101, 43, 226) 5px solid;
+}
+
+.reset {
+  margin: 10px 10px ;
+  padding: 10px 10px;
+}
+
+.footer {
+  margin: 10px 10px ;
+  padding: 30px 20px;
+} 
