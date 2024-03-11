@@ -55,7 +55,7 @@ function ButtonDecod({ fraseOriginal, setFraseDecodificada }) {
   };
 
   return (
-    <button onClick={decodificar}>Decodificar</button>
+    <button className='btnCod' onClick={decodificar}>Decodificar</button>
   );
 }
 

@@ -22,7 +22,7 @@ export default class App extends Component {
       <header >Codificar e Decodificar Frases</header>
         <main className='App'>
           <div className="Input">
-            <textarea className='TextArea'
+            <textarea
               value={fraseOriginal}
               onChange={(e) => this.setState({ fraseOriginal: e.target.value })}
               rows={4}
@@ -30,12 +30,12 @@ export default class App extends Component {
               placeholder="Digite a frase..."
             />
   
-            <div className='botaoCod'>
+            <div className='buttonCod'>
               <ButtonCod
                 fraseOriginal={fraseOriginal}
                 setFraseCodificada={(novaFraseCodificada) => this.setState({ fraseCodificada: novaFraseCodificada })}
               />
-              <ButtonDecod
+              <ButtonDecod className='btnDec'
                 fraseOriginal={fraseOriginal}
                 setFraseDecodificada={(novaFraseDecodificada) => this.setState({ fraseDecodificada: novaFraseDecodificada })}
               />
@@ -43,18 +43,23 @@ export default class App extends Component {
           </div> 
           <div className='Output'>
             <div className='outputText'>
-              <h3>Frase </h3>
-              <p>{fraseCodificada}</p>
-              <p>{fraseDecodificada}</p>
+              <h3>Frase: </h3>
+              <div className='outpuTextArea'>
+                <p>{fraseCodificada}</p>
+                <p>{fraseDecodificada}</p>
+              </div>
             </div>
-            <ButtonCopy className='buttonCopy'
+            <ButtonCopy 
               fraseCodificada={fraseCodificada}
             />
           </div>
-        </main>  
-        <button className='reset' onClick={this.handleRefresh}>Reiniciar</button>
+        </main> 
+        <div className="buttonCopy">
+         <button className='btnCopy' onClick={this.handleRefresh}>Reiniciar</button>
+        </div>
         <footer className='footer'>
             Made in React with love
+            <div id="heart"></div>
         </footer>
     </body>
     );

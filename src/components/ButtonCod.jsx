@@ -32,7 +32,7 @@ function ButtonCod({ fraseOriginal, setFraseCodificada }) {
   };
 
   return (
-    <button onClick={codificar}>Codificar</button>
+    <button className='btnCod' onClick={codificar}>Codificar</button>
   );
 }
 
