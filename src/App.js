@@ -27,7 +27,7 @@ export default class App extends Component {
               onChange={(e) => this.setState({ fraseOriginal: e.target.value })}
               rows={4}
               cols={50}
-              placeholder="Digite a frase apenas letras minusculas"
+              placeholder="Digite palavras com apenas letras minusculas"
             />
   
             <div className='buttonCod'>
