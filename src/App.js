@@ -27,7 +27,7 @@ export default class App extends Component {
               onChange={(e) => this.setState({ fraseOriginal: e.target.value })}
               rows={4}
               cols={50}
-              placeholder="Digite a frase..."
+              placeholder="Digite a frase apenas letras minusculas"
             />
   
             <div className='buttonCod'>
@@ -43,7 +43,9 @@ export default class App extends Component {
           </div> 
           <div className='Output'>
             <div className='outputText'>
-              <h3>Frase: </h3>
+              <div className='Frase'>
+                <h3>Frase: </h3>
+              </div>
               <div className='outpuTextArea'>
                 <p>{fraseCodificada}</p>
                 <p>{fraseDecodificada}</p>
