@@ -25,11 +25,7 @@
 body {
   animation: Animation 10s ease infinite;
   background: linear-gradient(45deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5));
-  background-size: 200% 200%;
-  text-align: center;
-  box-sizing: border-box;
-  height: 120vh;
-  margin: 20px 20px;
+
 }
 
 @keyframes Animation {
@@ -103,9 +99,13 @@ header{
   padding: 10px 10px;
 }
 
-.footer {
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin: 10px 10px ;
   padding: 30px 20px;
+  gap: 10px;
 }
 
 .btnCod {
