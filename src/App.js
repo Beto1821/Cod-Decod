@@ -54,14 +54,14 @@ export default class App extends Component {
                 <p>{fraseDecodificada}</p>
               </div>
             </div>
-            <ButtonCopy 
+            <ButtonCopy className='btnCopy'
               fraseCodificada={fraseCodificada}
             />
           </div>
         </main> 
-        <div className="buttonCopy">
-         <button className='btnCopy' onClick={this.handleRefresh}>Reiniciar</button>
-        </div>
+        <section>
+           <button className='btnCopy' onClick={this.handleRefresh}>Reiniciar</button>
+        </section>
         <footer>
             <p>Made in React with love</p>
             <a href='https://github.com/Beto1821' >
