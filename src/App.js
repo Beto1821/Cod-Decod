@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import ButtonCod from './components/ButtonCod';
 import ButtonDecod from './components/ButtonDecod';
 import ButtonCopy from './components/ButtonCopy';
-import './App.css'; 
+import ImgBusca from './img/busca.svg';
+import './App.css';
 
 export default class App extends Component {
   state = {
@@ -43,8 +44,8 @@ export default class App extends Component {
           </div> 
           <div className='Output'>
             <div className='outputText'>
-              <div className='Frase'>
-                <h3>Frase: </h3>
+              <div >
+                {fraseCodificada || fraseDecodificada ? null : <img src={ImgBusca} alt="busca" />}
               </div>
               <div className='outpuTextArea'>
                 <p>{fraseCodificada}</p>
